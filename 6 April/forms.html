@@ -2,25 +2,38 @@
 <html lang="en">
 <head>
     <title>Forms</title>
+    
 </head>
 <body>
     <h1>HTML Forms</h1>
-    <form>
+    <form id="form1">
         <label for="firstName">First Name</label>
         <input type="text">
+        <br>
         <br>
         <label for="lastName">Last Name</label>
         <input type="text">
         <br>
+        <br>
+        <input type="submit" value="Press Here to submit">
+        <br>
 
     </form>
-    <form>
-        <input type="radio">
+    <br>
+    <form id="form2">
+        <input type="radio" id="collegeStudent" name="radiobutton">
         <label for="collegeStudent">College Student</label>
         <br>
+        <input type="radio" id="collegepassedout"name="radiobutton">
         <label for="collegepassedout">College Passed Out</label>
         <br>
+        <input type="radio" id="workingProffesional"name="radiobutton">
         <label for="workingProffesional">working Proffesional</label>
+    </form>
+    <form>
+        <h2>choose your vehicles that you have</h2>
+        <input type="checkBox"id="vehicle1" value="bike">
+        
     </form>
 </body>
 </html>

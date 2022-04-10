@@ -1,0 +1,27 @@
+.random-word1{
+    color: blueviolet;
+    border: 2px;
+    padding: auto;
+    background-color: black;
+}
+#button1{
+    color: black;
+    background-color: blanchedalmond;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+table{
+    border: 3px springgreen solid;
+    width: 90%;
+    padding: 10px;
+    border-spacing: 0px;
+}
+th{
+    text-align: left;
+    background-color: aqua;
+}
+tr:nth-child(even){
+    background-color: beige;
+}
+
