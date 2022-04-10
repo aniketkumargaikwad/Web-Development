@@ -19,21 +19,51 @@
         <br>
 
     </form>
-    <br>
-    <form id="form2">
-        <input type="radio" id="collegeStudent" name="radiobutton">
+    <form>
+        <input type="radio" id="collegeStudent" class="radio-bt" name="status" value="clgstd">
         <label for="collegeStudent">College Student</label>
         <br>
-        <input type="radio" id="collegepassedout"name="radiobutton">
+        <input type="radio" id="collegepassedout" class="radio-bt" name="status" value="passoutstd">
         <label for="collegepassedout">College Passed Out</label>
         <br>
-        <input type="radio" id="workingProffesional"name="radiobutton">
+        <input type="radio" id="workingProffesional" class="radio-bt" name="status" value="workingprof">
         <label for="workingProffesional">working Proffesional</label>
     </form>
-    <form>
-        <h2>choose your vehicles that you have</h2>
-        <input type="checkBox"id="vehicle1" value="bike">
-        
+    <br>
+    <input type="Submit" value="Submit Response">
+    <br>
+    <br>
+    <form action="/formData" target="_blank" method="get">
+        <fieldset>
+            <legend><h2>Personal Details</h2></legend>
+            <h4>Entre Name</h4>
+            <label for="firstnaming">First Name:</label>
+            <br>
+            <input type="text" name="firstnaming"  placeholder="Entre First Name" required >
+            <br>
+            <label for="lastnaming">Last Name</label>
+            <br>
+            <input type="text" name="lastnaming" value="ronny" placeholder="Entre Last Name" required >
+            <br>
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend><h2>Social Media Details</h2></legend>
+            <label for="email id">Email ID</label>
+            <br>
+            <input type="text" name="email id" placeholder="Entre your Email ID">
+            <br>
+            <label for="instagram">Instagram ID</label>
+            <br>
+            <input type="text" name="instagram" placeholder="Entre Your Instagram ID">
+            <br>
+            <label for="facebook">Facebook User Name</label>
+            <br>
+            <input type="text" name="facebook" placeholder="Entre Facebook user name">
+        </fieldset>
+
     </form>
 </body>
 </html>
