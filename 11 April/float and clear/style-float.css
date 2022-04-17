@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+p>img{
+    width: 500px;
+    margin-left: 20px;
+    margin-top: 50px;
+    float: right;
+    margin-right: 10px;
+}
+p::after{
+    content: "";
+    margin-left: 30px;
+    display: table;
+    clear: both;
+}
+.box{
+    float: left;
+    padding: 50px;
+    width: 33.33%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1px;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+:root{
+    --redcolor: rgb(79, 144, 163);
+    --blackcolor: black;
+    --fontsize: 50px;
+
+}
+p{
+    --greencolor: green;
+
+}
+@media screen and (max-width: 800px) {
+    :root{
+        --redcolor: gray;
+        
+    }
+    
+}
