@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oxygen:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&family=Noto+Serif&family=Oxygen:wght@300&family=Parisienne&family=Syncopate&family=Trirong:wght@300&family=Ubuntu:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -56,10 +56,11 @@ nav .navbar a{
     margin: 10px;
 }
 .container h1{
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 900;
     padding: 10px;
     letter-spacing: 2px;
+    font-family: 'Parisienne', cursive;
 }
 .container p{
     margin: 5px;
@@ -75,6 +76,7 @@ nav .navbar a{
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 2px;
+    font-family: 'Trirong', serif;
 }
 .main .container .button1{
     margin: 2px;
@@ -90,9 +92,13 @@ nav .navbar a{
     color: #000;
     border-radius: 20px;
 }
-.button1:hover{
-    background: black;
-    color: red;
+.main .container .button1:hover{
+    background: rgb(116, 105, 238);
+    color: white;
+}
+.main .container .button2:hover{
+    background: rgb(116, 105, 238);
+    color: white;
 }
 .change-words:after{
     content: '';
