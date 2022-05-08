@@ -14,8 +14,15 @@ let car={
     model: "Q7",
     price: "20,00,000",
     maxSpeed: "200 km/hr",
+    history: ["firstOwned",2000,"color: white"],
     run: function(){
         console.log("running at "+this.maxSpeed+" speed")
+    },
+    ownerDetails:{
+        houseNo: 21,
+        street: "Avanue Street",
+        city: "Bangaluru",
+        contactDetails: [1023, "TelePhone: 54666"]
     }
 
 }
