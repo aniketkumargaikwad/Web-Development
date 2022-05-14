@@ -1,0 +1,85 @@
+@import 'utilities.css';
+:root{
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --pure: #ffffff;
+    --ternary: #898989;
+    --light: #f2f2f2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: var(--dark);
+}
+header a{
+    color: var(--pure);
+    text-decoration: none;
+    padding-right: 2rem;
+    text-transform: uppercase;
+
+}
+header a:hover{
+    color: var(--primary);
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header nav{
+    padding: 2rem;
+}
+#brandlogo{
+    padding-right: 3rem;
+}
+.btn{
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem; 
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+.btn-primary{
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+.hero img{
+    width: 50vh;
+}
+.hero .hero-right{
+    color: var(--pure);
+}
+.hero h3{
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: var(--primary);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.hero h1{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+.change-words:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #e4a541;
+}
+@keyframes changetext{
+    0%{content: "Web Developer";}
+    20%{content: "Software Engineer";}
+    40%{content: "Full Stack Developer";}
+    60%{content: "Creative Designer";}
+    80%{content: "Coding Enthusiast";}
+    100%{content: "Competitive Programmer";}
+}
