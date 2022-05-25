@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 75vh;
+    background: url("weather.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 50vh;
+    font-family: 'Lato', sans-serif;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 700px;
+    background: rgba(0,0,0,0.5);
+}
+.container h1, #display {
+    padding: 1rem;
+}
+#cityName{
+    font-size: 25px;
+    font-weight: 5-700;
+}
+h1{
+    letter-spacing: 2mm;
+    font-size: 50px;
+    word-spacing: 3mm;
+    font-family: 'Poppins', sans-serif;
+    
+}
+#entre-name{
+    padding: 8px 0;
+}
+#btn, .btn{
+    padding:11px 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+}
+#btn:hover, .btn:hover{
+    color: white;
+    background: black;
+}
+#entre-name{
+    padding: 6px 21px;
+    margin: 3px 15px;
+    border: 2px solid white;
+    border-radius: 25px;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 23px;
+    width: 300px;
+}
+#display{
+    display: none;
+    margin-top: 10px;
+    font-size: x-large;
+}
+#btn2{
+    margin-top: 10px;
+}
