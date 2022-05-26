@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    background: rgb(170, 142, 146);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+.container{
+    margin-top: 50px;
+}
+.container h1{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1mm;
+}
+#message{
+    margin-top: 25px;
+    font-size: 20px;
+}
+.details{
+    margin-top: 20px;
+}
+.details label, .details input{
+    padding: 8px;
+    margin-bottom: 3px;
+    font-size: 15px;
+    outline: none;
+}
+.details input{
+    font-size: 20px;
+    padding: 7px 20px;
+}
+.details input:focus{
+    border: 2px solid rgb(0, 7, 8);
+
+}
+.details label{
+    font-size: 19px;
+}
+.details button{
+    margin-top: 10px;
+    padding: 10px 40px;
+    font-size: 16px;
+    background: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.details button:hover{
+    background: black;
+    color: white;
+}
+#game{
+    display: none;
+    width: 318px;
+    height: 318px;
+    background-color: rgb(200, 131, 200);
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 30px 40px;
+}
+.game-slot{
+    border: 2px solid rgb(252, 250, 250);
+    height: 100px;
+    margin: 1px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+
+}
+#btn1{
+    display: none;
+    margin-top: 10px;
+    padding: 10px 40px;
+    font-size: 16px;
+    background: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#btn1:hover{
+    background: black;
+    color: white;
+}
+.reset-btn{
+    display: flex;
+    justify-content: center;
+}
