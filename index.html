@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                text-align: center;
+            }
+            .container{
+                background: rgba(0, 0, 0, 0.3);
+                width: 500px;
+                padding: 20px;
+                position: relative;
+            }
+            input{
+                padding: 3px 20px;
+                border: none;
+                outline: none;
+                font-size: 15px;
+            }
+            select{
+                padding: 5px 20px;
+            }
+            button{
+                background: transparent;
+                padding: 5px 20px;
+                margin-top: 20px;
+            }
+            
+            td{
+                padding: 2px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>My Form</h2>
+            <form action="RegisterServlet" method="post">
+                <table>
+                    <tr>
+                        <td>Entre Your Name</td>
+                        <td><input type="text" placeholder="Entre your name here" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Entre Your Password</td>
+                        <td><input type="text" placeholder="Entre your Password here" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td>Entre Your Email</td>
+                        <td><input type="email" placeholder="Entre your email here" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Select Your Gender</td>
+                        <td>
+                            <input type="radio" name="gender" value="male">Male &nbsp; <input type="radio" name="gender" value="female">Female
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Select your Prefferd Language</td>
+                        <td>
+                            <select name="select-lang" id="select-lang">
+                                <option value="java">Java</option>
+                                <option value="java">C++</option>
+                                <option value="java">Python</option>
+                                <option value="java">PHP</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">
+                            <input type="checkbox" value="checked" name="conditions" id="ckbox">
+                        </td>
+                        <td>Accept Terms and Conditions</td>
+                    </tr>
+                    
+
+                </table>
+                <button type="submit">Submit</button> <button type="reset">Reset</button>
+            </form>
+        </div>
+    </body>
+</html>

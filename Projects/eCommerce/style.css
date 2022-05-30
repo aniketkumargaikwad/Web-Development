@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-size: 50px;
+}
+h4{
+    font-size: 28px;
+}
+h2{
+    font-size: 45px;
+}
+h3{
+    font-size: 31px;
+}
+h5{
+    font-size: 21px;
+}
+h6{
+    font-size: 17px;
+}
+p{
+    font-size: 17px;
+    color: rgb(67, 66, 66);
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+}
+.firstSection{
+    width: 100%;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(202, 240, 251);
+    padding: 5px 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+#logo-img{
+    padding:10px 20px;
+    margin-top: 11px;
+}
+.navbar ul{
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0 2px;
+    height: 78px;
+}
+.navbar li{
+    list-style: none;
+    padding: 0 15px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(94, 107, 161);
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.navbar-options a:hover, .navbar-options a.active{
+    color: rgb(6, 28, 173);
+}
+.navbar-options a.active::after, .navbar-options a:hover::after{
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 2px;
+    background: rgb(6, 28, 173);
+    bottom: -4px;
+    left: 16px;
+}
+.btn{
+    padding: 7px 38px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+.btn:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+#homePage{
+    background-image: url("images/hero4.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 20% right 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.homePageContainer{
+    margin-left: 90px;
+}
+#homePage h4{
+    padding-bottom: 10px;
+    margin-top: -100px;
+}
+#homePage h1{
+    color: #088178;
+    margin-top: -8px;
+}
+#homePage p{
+    color: rgb(67, 66, 66);
+    padding: 10px 0;
+}
+
+/* features section */
+.features{
+    margin: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.featuresContainer{
+    padding: 25px 20px;
+    margin: 10px 20px;
+    width: 150px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flexbox;
+    border: 1px solid rgb(206, 195, 195);
+    flex-direction: row;
+    cursor: pointer;
+}
+.featuresContainer:hover{
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
+}
+.featuresContainer img{
+    width: 100%;
+    margin: 5px 0;
+}
+.featuresContainer h6{
+    font-size: 15px;
+    background: #088178;
+    padding: 3px;
+    display: inline-block;
+    padding: 7px 15px;
+}
+#fc2 h6{
+    background: rgb(207, 135, 135);
+}
+#fc3 h6{
+    background: rgb(152, 205, 152);
+}
+#fc4 h6{
+    background: rgb(182, 146, 182);
+}
+#fc5 h6{
+    background: palegreen;
+}
+#fc6 h6{
+    background: sandybrown;
+}
+
+/* product section */
+
+.products{
+    margin-top: 50px;
+    text-align: center;
+}
+.productsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.productImageContainer{
+    width: 250px;
+    margin: 10px 20px;
+    border: 1px solid rgb(162, 140, 140);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.productImageContainer .addInfo{
+    text-align: start;
+    padding: 5px 10px;
+}
+.productImageContainer:hover{
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
+}
+.productImageContainer h5{
+    font-size: 20px;
+    padding: 3px 0;
+}
+.productImageContainer h6{
+    font-size: 17px;
+    color: rgb(1, 201, 11);
+}
+.productImageContainer h5:hover{
+    color: #088178; 
+}
+.productImageContainer img{
+    width: 97%;
+    margin-top: 5px;
+    border-radius: 30px;
+    padding-bottom: 15px;
+}
+.starsContainer i{
+    color: gold;
+    padding-bottom: 2px;
+}
+.productImageContainer .cartLogo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background: #088178;
+}
