@@ -733,13 +733,13 @@ footer .copyright{
     }
     .services .card-wrapper {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 2rem;
         grid-row-gap: 6rem;
     }
     .work .card-wrapper {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
     }
     .work .card-wrapper .card .overlay {
@@ -768,7 +768,7 @@ footer .copyright{
     }
     .blog .card-wrapper {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 3rem;
         padding-bottom: 10rem;
         /* align-items: center; */
