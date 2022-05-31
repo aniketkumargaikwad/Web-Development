@@ -10,10 +10,10 @@
 </head>
 <body>
     <header id="header">
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <a href="#" id="logo-img"><img src="./images/logo.png" alt=""></a>
             
-            <div class="navbar-options">
+            <div class="navbar-options" id="navbar-options">
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">Offers</a></li>
@@ -21,18 +21,25 @@
                     <li><a href="#">Categories</a></li>
                     <li><a href="#">Contact us</a></li>
                     <li><a href="#"><i id="icon1" class="far fa-shopping-bag"></i></a></li>
+                    <a href="#" id="close"><i class="fas fa-times"></i></a>
                 </ul>
                 
+            </div>
+            <div class="mobileNavbar">
+                <a href="#"><i id="icon1" class="far fa-shopping-bag"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
             </div>
         </div>
     </header>
     <section id="homePage">
         <div class="homePageContainer">
-            <h4>Trade-in-deals</h4>
-            <h2>Super Value Deals</h2>
-            <h1 id="homePageH1">On All Products</h1>
-            <p>Save more with coupons and get upto 70% off</p>
-            <button class="btn">Buy Now</button>
+            <div class="homePageInfo">
+                <h4>Trade-in-deals</h4>
+                <h2>Super Value Deals</h2>
+                <h1 id="homePageH1">On All Products</h1>
+                <p>Save more with coupons and get upto 70% off</p>
+                <button class="btn">Buy Now</button>
+            </div>
             
         </div>
     </section>

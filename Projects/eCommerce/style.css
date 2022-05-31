@@ -49,6 +49,12 @@ header{
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     z-index: 100;
 }
+.mobileNavbar{
+    display: none;
+}
+#close{
+    display: none;
+}
 #logo-img{
     padding:10px 20px;
     margin-top: 11px;
@@ -448,6 +454,7 @@ header{
 .footerContainer{
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 20px;
 }
@@ -492,4 +499,201 @@ header{
 }
 .footer .payLogo{
     margin-top: 10px;
+}
+/* media query for iPad */
+@media (max-width:799px){
+    /* #secondPan .panel1 h4{
+        font-size: 25px;
+    } */
+    .footer .col{
+        padding: 20px;
+    }
+    .panel{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .panelContainer {
+        min-width: 92%;
+        height: 380px;
+    }
+    .bottomPanel .panelContainer{
+        min-width: 33%;
+    }
+    #bottomPanel{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .bannerContainer h1{
+        font-size: 45px;
+    }
+    .bannerContainer h3{
+        font-size: 33px;
+        color: gold;
+    }
+    .bannerContainer h4{
+        font-size: 30px;
+    }
+    #homePage{
+        background-position: top 20% right -226px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 95%, 0 100%);
+    }
+    #homePage .homePageInfo{
+        margin-left: -60px;
+    }
+    .fromContainer{
+        flex-direction: column;
+    }
+    .form p{
+        margin-bottom: -25px;
+    }
+    .navbar-options{
+        width: 260px;
+        background: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        right: -300px;
+        /* transform: translateX(-100%); */
+        top: 0;
+        height: 100vh;
+        padding: 0 20px;
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    /* .open{
+        transform: translateX(0);
+    } */
+    .active1{
+        right: 0px;
+    }
+    .navbar-options ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+    .navbar-options li a{
+        color: white;
+        padding: 10px;
+    }
+    .navbar-options li{
+        padding: 15px 5px;
+    }
+    .navbar-options a:hover, .navbar-options a.active{
+        color: aqua
+    }
+    .navbar-options a.active::after, .navbar-options a:hover::after{
+        background: aqua;
+    }
+    .mobileNavbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .mobileNavbar a{
+        padding: 0 30px;
+    }
+    .mobileNavbar i{
+        font-size: 25px;
+    }
+    .mobileNavbar i:hover{
+        cursor: pointer;
+    }
+    #icon1{
+        cursor: pointer;
+    }
+    #close{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 240px;
+        font-size: 30px;
+        
+    }
+}
+@media (max-width:450px){
+    .panelContainer{
+        background-image: url("./images/banner/b17.jpg");
+        height: 50vh;
+        margin: 20px 0px;
+        background-size: cover;
+        background-position: center;
+    }
+    .panelContainer .panel1{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+    .panel{
+        flex-wrap: nowrap;
+    }
+    .panelContainer{
+        max-width: 100%;
+    }
+    #secondPan .panel1 h4{
+        font-size: 32px;
+    }
+    #bottomPanel{
+        width: 100%;
+    }
+    #bottomPanel {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #bottomPanel .panelContainer{
+        padding: 0px;
+        margin: 2px;
+    }
+    .panelContainer .panel1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 100px;
+    }
+    .formContent1{
+        padding: 0;
+        margin: 0 20px;
+        text-align: center;
+    }
+    .form h4{
+        font-size: 32px;
+    }
+    .form p {
+        margin-bottom: 4px;
+    }
+    .formContent1 .btn{
+        margin-top: 10px;
+    }
+    .formContent1 input{
+        font-size: 17px;
+    }
+    .featuresContainer {
+        padding: 25px 15px;
+        margin: 10px 4px;
+    }
+    .features{
+        margin: 20px 0;
+    }
+    .bannerContainer h4{
+        font-size: 20px;
+    }
+    .bannerContainer h1{
+        font-size: 27px;
+    }
+    .bannerContainer h3{
+        font-size: 21px;
+    }
+    .form .btn {
+        padding: 4px 50px;
+        font-size: 20px;
+    }
 }
