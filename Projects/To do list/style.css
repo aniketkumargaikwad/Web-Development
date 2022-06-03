@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 400px;
+    margin: 5px;
+    padding: 30px;
+    border: 2px solid black;
+    height: 80vh;
+}
+h1{
+    align-items: center;
+    text-align: center;
+    background: rgba(251, 231, 8, 0.677);
+    padding: 20px 2px;
+    margin: -30px;
+}
+
+/* .toDoList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn{
+    background-color: aqua;
+    text-align: center;
+}
+ */
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.btn{
+    padding: 7px 50px;
+    font-size: 20px;
+    color: white;
+    background: black;
+}

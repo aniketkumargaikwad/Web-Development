@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let fetchDataFromServer=()=>new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve('[200] Data Fetched Successfully')
+            },3000)
+        })
+        let processData=()=>new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve('[200] Data Processed Successfully')
+            },5000)
+        })
+
+        const fetchAndProcessData=async()=>{
+            try{
+                console.log("Fetching data from server")
+                const res=await fetchDataFromServer();
+                console.log(res)
+                console.log('processing started')
+                const res2= await processData();
+                console.log(res2)
+            }catch(err){
+                console.log(err)
+            }
+        }
+        fetchAndProcessData();
+    </script>
+</body>
+</html>
