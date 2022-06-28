@@ -1,0 +1,44 @@
+.navbar, .jumbotron{
+    background-color: #fbe5d6;
+}
+.logoImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.navbar-brand img{
+    width: 120px;
+}
+.jumbotron{
+    text-align: center;
+}
+.brandName{
+    background: linear-gradient(90deg, rgba(132,28,60,1) 0%, rgba(248,95,81,1) 100%);
+    color: #ffffff;
+    padding: 5px 60px;
+    border-radius: 100px;
+    font-size: 5rem;
+    padding-bottom: 17px;
+}
+.btn-primary{
+    background: none;
+    color: black;
+    padding: 10px 50px;
+}
+.btn{
+    /* border: none; */
+    border: 1px solid black;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.btn:active{
+    box-shadow: none;
+}
+.btn:hover{
+    background: black;
+    color: white;
+    border: 1px solid black;
+
+}
